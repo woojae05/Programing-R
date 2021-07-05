@@ -54,3 +54,13 @@ length(mat1)
 # 벡터에서는 c()로 조합,
 # 행렬에서는 rbind(), cbind()
 
+mat6<- matrix(1:6, nrow = 2)
+mat7<-matrix(c(2,3,4), nrow = 1)
+mat8<-rbind(mat6,mat7) #열의 개수가 맞아야한다
+
+mat9 <- cbind(c(1,2,3),c(4,5,6)) #행의 개수가 맞아야한다
+
+# rbind(), cbind()는 데이터프레임에서도 사용 가능
+# 인자가 dataframe이면 dataframe으로 조합
+
+
